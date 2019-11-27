@@ -11,7 +11,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: $color-white;
-    border-bottom: $color-gray-light-2;
+    border-bottom: 1px solid $color-gray-light-2;
 
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,6 @@
     background-color: $color-white;
     
     // TEST
-    background-color: orangered;
     height: 80rem;
 
     flex: 1;
