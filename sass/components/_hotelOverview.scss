@@ -8,9 +8,8 @@
 }
 
 .overview {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid $color-gray-light-2;
+    @include flexCenter;
+    border-bottom: $line;
 
     &__heading {
         font-size: 2.25rem;
@@ -52,10 +51,9 @@
         padding: 0 2.25rem;
         align-self: stretch;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexCenter;
         justify-content: center;
+        flex-direction: column;
 
         &-count {
             font-size: .8rem;
