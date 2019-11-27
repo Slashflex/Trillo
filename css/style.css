@@ -1,42 +1,3 @@
-.logo {
-  height: 3.25rem;
-  margin-left: 2rem; }
-
-.search {
-  flex: 0 0 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .search__input {
-    border: none;
-    color: inherit;
-    padding: .7rem 2rem;
-    border-radius: 100px;
-    width: 90%;
-    background-color: #f4f2f2;
-    transition: all .2s;
-    margin-right: -3.25rem; }
-    .search__input:focus {
-      outline: none;
-      width: 100%;
-      background-color: #f0eeee; }
-    .search__input::-webkit-input-placeholder {
-      font-weight: 100;
-      color: #ccc; }
-  .search__input:focus + .search__button {
-    background-color: #f0eeee; }
-  .search__button {
-    border: none;
-    background-color: #f4f2f2; }
-    .search__button:focus {
-      outline: none; }
-    .search__button:active {
-      transform: translateY(2px); }
-  .search__icon {
-    height: 2rem;
-    width: 2rem;
-    fill: #eb2f64; }
-
 .user-nav {
   align-self: stretch;
   display: flex;
@@ -113,11 +74,40 @@
     margin-right: 2rem;
     fill: currentColor; }
 
-.legal {
-  font-size: 1.2rem;
-  color: #ccc;
-  text-align: center;
-  padding: 2.5rem; }
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    border: none;
+    color: inherit;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    background-color: #f4f2f2;
+    transition: all .2s;
+    margin-right: -3.25rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: #f0eeee; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #ccc; }
+  .search__input:focus + .search__button {
+    background-color: #f0eeee; }
+  .search__button {
+    border: none;
+    background-color: #f4f2f2; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #eb2f64; }
 
 .container {
   max-width: 120rem;
@@ -150,6 +140,16 @@
   background-color: orangered;
   height: 80rem;
   flex: 1; }
+
+.legal {
+  font-size: 1.2rem;
+  color: #ccc;
+  text-align: center;
+  padding: 2.5rem; }
+
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem; }
 
 * {
   margin: 0;
