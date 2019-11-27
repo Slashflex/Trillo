@@ -1,8 +1,7 @@
 .search {
     flex: 0 0 40%;
 
-    display: flex;
-    align-items: center;
+    @include flexCenter; 
     justify-content: center;
 
     &__input {
