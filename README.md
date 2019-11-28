@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Trillo 👋</h1>
 <p align="center" markdown="1">
-
+  <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/Slashflex/Trillo?style=flat-square">
   <img alt="Netlify" src="https://img.shields.io/netlify/888bad59-c4f9-45d0-a2f9-b37920d99819?style=flat-square">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Slashflex/Trillo?style=flat-square">
 </p>
