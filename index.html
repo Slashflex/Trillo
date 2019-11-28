@@ -6,7 +6,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="img/favicon1.png">
         <script
 			  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 			  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
@@ -18,7 +18,7 @@
     <body>
         <div class="container">
             <header class="header">
-                <img src="img/logo.png" alt="Trillo logo" class="logo">
+                <img src="img/logo1.png" alt="Trillo logo" class="logo">
             
                 <form action="#" class="search">
                     <input type="text" class="search__input" placeholder="Search hotel">
@@ -27,6 +27,95 @@
                             <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
                     </button>
+
+                    <div class="suggestions">
+                        <ul class="suggestions__list">
+    
+                            <li class="suggestions__item">
+                                <img src="img/hotel-1.jpg" alt="picture hotel 1" class="suggestions__photo">
+                                <div class="suggestions__item-box">
+    
+                                    <h3 class="suggestions__name">Hotel Las Palmas</h3>
+                                    <p class="suggestions__location">Lisbon, Portugal</p>
+    
+                                    <div class="suggestions__stars">
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="suggestions__rating">8.2</div>
+                            </li>
+    
+                            <li class="suggestions__item">
+                                <img src="img/hotel-2.jpg" alt="picture hotel 2" class="suggestions__photo">
+                                <div class="suggestions__item-box">
+    
+                                    <h3 class="suggestions__name">Hotel Sea cliff</h3>
+                                    <p class="suggestions__location">Zanzibar, Africa</p>
+    
+                                    <div class="suggestions__stars">
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="suggestions__rating">8.9</div>
+                            </li>
+    
+                            <li class="suggestions__item">
+                                <img src="img/hotel-3.jpg" alt="picture hotel 3" class="suggestions__photo">
+                                <div class="suggestions__item-box">
+                                    
+                                    <h3 class="suggestions__name">Hotel Sanur Plaza</h3>
+                                    <p class="suggestions__location">Bali, Indonesia</p>
+    
+                                    <div class="suggestions__stars">
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="suggestions__icon-star">
+                                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="suggestions__rating">9.1</div>
+                            </li>
+                        </ul>
+                    </div>
                 </form>
 
                 <nav class="user-nav">
@@ -36,15 +125,113 @@
                         </svg>
                         <span class="user-nav__notification">7</span>
                     </div>
-                    <div class="user-nav__icon-box">
+                    <div class="user-nav__icon-box  user-nav__message-icon">
                         <svg class="user-nav__icon">
                             <use xlink:href="img/sprite.svg#icon-chat"></use>
                         </svg>
                         <span class="user-nav__notification">13</span>
+
+                        <div class="chat">
+                            <ul class="chat__list">
+    
+                                <li class="chat__item">
+                                    <img src="img/user-1.jpg" alt="Chat photo 1" class="chat__photo">
+                                    <div class="chat__box">
+                                        <div class="chat__info">
+                                            <p class="chat__user-name">
+                                                Mark Johnson
+                                            </p>
+                                            <p class="chat__timestamp">
+                                                16:19, 12.05.2018
+                                            </p>
+                                        </div>
+                                        <p class="chat__preview">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit...</p>
+                                    </div>
+                                </li>
+    
+                                <li class="chat__item">
+                                    <img src="img/user-2.jpg" alt="Chat photo 2" class="chat__photo">
+                                    <div class="chat__box">
+                                        <div class="chat__info">
+                                            <p class="chat__user-name">
+                                                Ann Smith
+                                            </p>
+                                            <p class="chat__timestamp">
+                                                22:34, 16.10.2019
+                                            </p>
+                                        </div>
+                                        <p class="chat__preview">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit...</p>
+                                    </div>
+                                </li>
+    
+                                <li class="chat__item">
+                                    <img src="img/user-6.jpg" alt="Chat photo 3" class="chat__photo">
+                                    <div class="chat__box">
+                                        <div class="chat__info">
+                                            <p class="chat__user-name">
+                                                Clara Goodwin
+                                            </p>
+                                            <p class="chat__timestamp">
+                                                10:52, 05.28.2019
+                                            </p>
+                                        </div>
+                                        <p class="chat__preview">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit...</p>
+                                    </div>
+                                </li>
+                                <li class="chat__item chat__btn">
+                                    <button class="btn-inline">Show all <span>&rarr;</span></button>
+                                </li>
+    
+                            </ul>
+                        </div>
                     </div>
-                    <div class="user-nav__user">
+                    <div class="user-nav__user user-nav__settings">
                         <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
                         <span class="user-nav__user-nav-name">Jonas</span>
+                    
+                        <div class="settings">
+                                <ul class="settings__list">
+        
+                                    <li class="settings__item">
+                                        <a href="#" class="settings__link">
+                                            <svg class="settings__icon">
+                                                <use xlink:href="img/sprite.svg#icon-layers"></use>
+                                            </svg>
+                                            <span>My Bookings</span>
+                                        </a>
+                                    </li>
+        
+                                    <li class="settings__item">
+                                        <a href="#" class="settings__link">
+                                            <svg class="settings__icon">
+                                                <use xlink:href="img/sprite.svg#icon-new-message"></use>
+                                            </svg>
+                                            <span>My Reviews</span>
+                                        </a>
+                                    </li>
+        
+                                    <li class="settings__item">
+                                        <a href="#" class="settings__link">
+                                            <svg class="settings__icon">
+                                                <use xlink:href="img/sprite.svg#icon-users"></use>
+                                            </svg>
+                                            <span>My Friends</span>
+                                        </a>
+                                    </li>
+        
+                                    <li class="settings__item">
+                                        <a href="#" class="settings__link">
+                                            <svg class="settings__icon">
+                                                <use xlink:href="img/sprite.svg#icon-cog"></use>
+                                            </svg>
+                                            <span>Settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                     </div>
                 </nav>
             </header>
@@ -92,17 +279,19 @@
                     </div>
                 </nav>
 
-
                 <main class="hotel-view">
                     <div class="gallery">
                         <figure class="gallery__item">
                             <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
+                            <figcaption class="gallery__photo-caption">Pool at night</figcaption>
                         </figure>
                         <figure class="gallery__item">
                             <img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
+                            <figcaption class="gallery__photo-caption">Outdoor pool</figcaption>
                         </figure>
                         <figure class="gallery__item">
                             <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
+                            <figcaption class="gallery__photo-caption">Stunning view</figcaption>
                         </figure>
                     </div>
 
