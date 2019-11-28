@@ -1,5 +1,4 @@
 // COLORS
-
 $color-primary: #eb2f64;
 $color-primary-light: #FF3366;
 $color-primary-dark: #BA265D;
@@ -18,4 +17,12 @@ $color-black: #000;
 
 $shadow-dark: 0 2rem 6rem rgba($color-black, .3);
 $shadow-dark-subtle: 0 2rem 5rem rgba($color-black, .06);
+
 $line: 1px solid $color-gray-light-2;
+
+// BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 68.75em;  // 1100px
+$bp-medium: 68.25em; // 900px
+$bp-small: 37.5em;   // 600px
+$bp-smallest: 31.25em; // 500px

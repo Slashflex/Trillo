@@ -10,6 +10,10 @@
         height: 100%;
         @include flexCenter; 
 
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 1.7rem 2rem;
+        }
+
         &:hover {
             background-color: $color-gray-light-2;
         }

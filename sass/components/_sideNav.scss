@@ -3,11 +3,24 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+        margin: 0;
+    }
+
     &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                margin: 0;
+            }
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
         }
 
         &::before {
@@ -35,7 +48,6 @@
         }
     }
 
-    
     &__link:link,
     &__link:visited {
         color: $color-gray-light-1;
@@ -47,6 +59,16 @@
         z-index: 10;
 
         @include flexCenter;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem .5rem;
+        }
     }
 
     &__icon {
@@ -54,5 +76,12 @@
         height: 1.75rem;
         margin-right: 2rem;
         fill: currentColor; // color of parent
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: .7rem;
+            width: 1.5rem;
+            height: 1.5rem
+        }
     }
 }

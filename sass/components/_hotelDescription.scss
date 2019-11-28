@@ -42,7 +42,11 @@
     color: $color-gray-dark-3;
 
     @include flexCenter;
-
+    
+    &__friends {
+        display: flex;
+    }
+    
     &__photo {
         box-sizing: content-box;
         height: 4rem;
@@ -51,15 +55,11 @@
         border: 3px solid $color-white;
 
         &:not(:last-child) {
-            margin-right: -1.5rem;
+            margin-right: -2rem;
         }
     }
 
     &__count {
         margin-right: auto;
-    }
-
-    &__friends {
-
     }
 }
