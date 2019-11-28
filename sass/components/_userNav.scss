@@ -3,11 +3,13 @@
     
     display: flex;
     align-items: center;
+    position: relative;
 
     & > * {
         padding: 0 2rem;
         cursor: pointer;
         height: 100%;
+
         @include flexCenter; 
 
         @media only screen and (max-width: $bp-smallest) {
@@ -19,14 +21,29 @@
         }
     }
 
-    &__icon-box {
-        position: relative;
+    &__message-icon:hover .chat {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    &__settings:hover .settings {
+        visibility: visible;
+        opacity: 1;
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
         fill: $color-gray-dark-2;
+
+        &-box {
+            position: relative;
+    
+            &:hover > :nth-child(2) {
+                background-color: $color-primary-dark-hover;
+                animation: zoomInAndOut 0.3s ease-in-out;
+            }
+        }
     }
 
     &__notification {
@@ -50,5 +67,146 @@
         height: 3.75rem;
         border-radius: 50%;
         margin-right: 1rem;
+    }
+}
+
+.settings {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    top: 100%;
+    right: 0;
+    width: 17rem;
+  
+    font-size: 1rem;
+    background-color: $color-white;
+    @include boxShadowHover;
+    transition: all 0.2s 0.1s;
+  
+    @media only screen and (max-width: $bp-smallest) {
+        top: 132%;
+    }
+  
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    &__item {
+        display: flex;
+        justify-content: center;
+    
+        padding: 1.2rem 1.5rem;
+        transition: all 0.2s;
+  
+        &:hover {
+            background-color: $color-gray-light-1;
+        }
+
+        &:not(:last-child) {
+            @include borderBottomSmall;
+        }
+    }
+  
+    &__link:link,
+    &__link:visited {
+        flex: 0 0 80%;
+        color: $color-gray-dark-1;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+        display: flex;
+        align-items: center; //center icons with links
+        justify-content: flex-start;
+    }
+  
+    &__icon {
+        flex: 0 0 20%;
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-right: 1.5rem;
+        fill: $color-primary-dark;
+    }
+}
+  
+
+.chat {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    top: 100%;
+    right: -12.7rem;
+    width: 35rem;
+  
+    font-size: 1.2rem;
+    background-color: $color-white;
+    @include boxShadowHover;
+    transition: all 0.2s 0.1s;
+  
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 1.5rem;
+        justify-content: space-between;
+        transition: all 0.2s;
+  
+        &:hover .chat__photo {
+            border: 3px solid $color-primary;
+        }
+  
+        &:not(:last-child):hover {
+            background-color: $color-gray-light-1;
+        }
+  
+        &:not(:last-child) {
+            @include borderBottomSmall;
+        }
+    }
+  
+    &__photo {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 3px solid $color-white;
+        transition: border 0.2s;
+    }
+  
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    &__info {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 0.2rem;
+    }
+  
+    &__user-name {
+        font-weight: 600;
+    }
+  
+    &__timestamp {
+        font-size: 1rem;
+        color: $color-primary-dark;
+        margin-left: auto;
+    }
+  
+    &__preview {
+        font-size: 1rem;
+    }
+  
+    &__btn {
+        align-self: center;
     }
 }
