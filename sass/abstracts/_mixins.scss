@@ -7,3 +7,15 @@
     display: flex;
     align-items: center;
 }
+
+@mixin boxShadowHover {
+    box-shadow: 0 1.5rem 3rem rgba($color-black, .5);
+}
+
+@mixin borderBottomSmall{
+    border-bottom: 1px solid $color-gray-light-2;
+}
+  
+@mixin borderTopSmall {
+    border-top: 1px solid $color-gray-light-2;
+}
