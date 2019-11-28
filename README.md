@@ -35,7 +35,8 @@ npm run compress:css
 
 ```sh
 npm start
-# This will watch for css changes and open and auto reload the page on change (live-server must be installed globally: sudo npm i -g live-server)
+# This will watch for css changes and open and auto reload the page on change 
+# (live-server must be installed globally: sudo npm i -g live-server)
 ```
 
 ```sh
