@@ -1,9 +1,41 @@
 .gallery {
     display: flex;
+    overflow: hidden;
+
+    &__item {
+        position: relative;
+    }
 
     &__photo {
         width: 100%;
         display: block;
+        
+        &:hover ~ &-caption {
+            opacity: 1;
+            visibility: visible;
+            right: 0; 
+        }
+
+        &-caption {
+            position: absolute;
+            bottom: 0;
+            right: -20rem;
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            padding: 1rem 3rem;
+            background-color: rgba($color-black, 0.5);
+            color: $color-gray-light-1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+            border-left: 0.8rem solid $color-primary-dark;
+            transition: all 0.3s ease-out;
+
+            @media only screen and (max-width: $bp-ultra-small) {
+                padding: 0.5rem 1rem;
+            }
+        }
     }
 }
 
