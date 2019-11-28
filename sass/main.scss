@@ -1,16 +1,17 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+@import 'base/base';
+
 @import 'components/userNav';
+@import 'components/searchBar';
+@import 'components/sideNav';
+@import 'components/hotelOverview';
+@import 'components/hotelDescription';
 @import 'components/reviews';
 @import 'components/cta';
 @import 'components/animations';
-@import 'components/hotelDescription';
 @import 'components/button';
-@import 'components/sideNav';
-@import 'components/searchBar';
-@import 'components/hotelOverview';
 
 @import 'pages/layout';
 
-@import 'base/base';
