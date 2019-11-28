@@ -1,0 +1,100 @@
+.suggestions {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    top: 100%;
+    right: 0;
+    width: 47rem;
+  
+    font-size: 1rem;
+    background-color: $color-white;
+    @include boxShadowHover;
+    transition: all 0.2s 0.1s;
+  
+    @media only screen and (max-width: $bp-medium) {
+        right: -2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        right: -13rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        right: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-ultra-small) {
+        right: 0;
+    }
+    
+    @media only screen and (max-width: $bp-nano-small) {
+        width: 40rem;
+    }
+  
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 1.2rem 1.5rem;
+        cursor: pointer;
+  
+        &:hover {
+            background-color: $color-gray-light-1;
+        }
+
+        &:not(:last-child) {
+            @include borderBottomSmall;
+        }
+    }
+    &__item-box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        justify-content: space-evenly;
+    }
+  
+    &__photo {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+  
+    &__name {
+        font-size: 1rem;
+    }
+  
+    &__location {
+        font-size: 0.8rem;
+    }
+  
+    &__stars {
+        display: flex; // remove space under star icons svgs
+        margin-left: -1px;
+        margin-top: 2px;
+    }
+  
+    &__icon-star {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: $color-primary-dark;
+    }
+  
+    &__rating {
+        background-color: $color-primary-dark;
+        color: $color-white;
+        font-size: 1.4rem;
+        font-weight: 300;
+        padding: 1rem 1.5rem;
+        align-self: stretch;
+        margin-left: auto;
+    
+        @include flexCenter;
+        justify-content: center;
+    }
+}
